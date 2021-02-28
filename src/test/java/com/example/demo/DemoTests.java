@@ -8,6 +8,6 @@ public class DemoTests {
 
     @Test
     public void sayYes() throws Exception {
-        assert true;
+        assert false;
     }
 }
