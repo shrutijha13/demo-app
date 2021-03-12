@@ -7,6 +7,7 @@ pipeline {
                     echo "Build step"
                     final String commitMsg = sh (script: 'git log -1', returnStdout: true).trim()
                     echo commitMsg
+                    
                     sh 'mvn clean install'
                 }
             }
